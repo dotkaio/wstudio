@@ -1,0 +1,22 @@
+{
+  "name": "@webstudio-is/html-data",
+  "version": "0.0.0",
+  "description": "HTML Data",
+  "author": "Webstudio <github@webstudio.is>",
+  "homepage": "https://webstudio.is",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@webstudio-is/tsconfig": "workspace:*"
+  },
+  "peerDependencies": {},
+  "exports": {
+    "webstudio": "./src/index.ts"
+  },
+  "license": "AGPL-3.0-or-later",
+  "private": true,
+  "sideEffects": false,
+  "dependencies": {}
+}

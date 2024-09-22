@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "netlify serve"
+  },
+  "dependencies": {
+    "@netlify/edge-functions": "^2.10.0",
+    "@netlify/remix-edge-adapter": "^3.3.0"
+  }
+}

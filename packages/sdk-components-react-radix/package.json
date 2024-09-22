@@ -1,0 +1,81 @@
+{
+  "name": "@webstudio-is/sdk-components-react-radix",
+  "version": "0.179.0",
+  "description": "Webstudio wrapper for radix library",
+  "author": "Webstudio <github@webstudio.is>",
+  "homepage": "https://webstudio.is",
+  "license": "AGPL-3.0-or-later",
+  "private": false,
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "lib/*",
+    "!*.{test,stories}.*"
+  ],
+  "exports": {
+    ".": {
+      "webstudio": "./src/components.ts",
+      "types": "./lib/types/components.d.ts",
+      "import": "./lib/components.js"
+    },
+    "./metas": {
+      "webstudio": "./src/metas.ts",
+      "types": "./lib/types/metas.d.ts",
+      "import": "./lib/metas.js"
+    },
+    "./props": {
+      "webstudio": "./src/props.ts",
+      "types": "./lib/types/props.d.ts",
+      "import": "./lib/props.js"
+    },
+    "./hooks": {
+      "webstudio": "./src/hooks.ts",
+      "types": "./lib/types/hooks.d.ts",
+      "import": "./lib/hooks.js"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf lib && esbuild src/components.ts src/metas.ts src/props.ts src/hooks.ts --outdir=lib --bundle --format=esm --packages=external",
+    "build:args": "NODE_OPTIONS=--conditions=webstudio generate-arg-types './src/*.tsx !./src/*.stories.tsx !./src/*.ws.ts !./src/*.test.{ts,tsx}' -e asChild -e modal -e defaultOpen -e defaultChecked && prettier --write \"**/*.props.ts\"",
+    "build:tailwind": "tsx scripts/generate-tailwind-theme.ts && prettier --write src/theme/__generated__",
+    "build:stories": "webstudio-sdk generate-stories && prettier --write \"src/__generated__/*.stories.tsx\"",
+    "dts": "tsc --project tsconfig.dts.json",
+    "typecheck": "tsc"
+  },
+  "peerDependencies": {
+    "react": "18.3.0-canary-14898b6a9-20240318",
+    "react-dom": "18.3.0-canary-14898b6a9-20240318"
+  },
+  "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.0",
+    "@radix-ui/react-checkbox": "^1.1.1",
+    "@radix-ui/react-collapsible": "^1.1.0",
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-navigation-menu": "^1.2.0",
+    "@radix-ui/react-popover": "^1.1.1",
+    "@radix-ui/react-radio-group": "^1.2.0",
+    "@radix-ui/react-select": "^2.1.1",
+    "@radix-ui/react-switch": "^1.1.0",
+    "@radix-ui/react-tabs": "^1.1.0",
+    "@radix-ui/react-tooltip": "^1.1.2",
+    "@webstudio-is/css-engine": "workspace:*",
+    "@webstudio-is/icons": "workspace:*",
+    "@webstudio-is/react-sdk": "workspace:*",
+    "@webstudio-is/sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.70",
+    "@types/react-dom": "^18.2.25",
+    "@webstudio-is/css-data": "workspace:*",
+    "@webstudio-is/generate-arg-types": "workspace:*",
+    "@webstudio-is/sdk-cli": "workspace:^",
+    "@webstudio-is/sdk-components-react": "workspace:*",
+    "@webstudio-is/tsconfig": "workspace:*",
+    "react": "18.3.0-canary-14898b6a9-20240318",
+    "react-dom": "18.3.0-canary-14898b6a9-20240318",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.5.2"
+  }
+}

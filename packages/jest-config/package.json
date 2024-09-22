@@ -1,0 +1,9 @@
+{
+  "name": "@webstudio-is/jest-config",
+  "version": "1.0.7",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "@jest/types": "^29.6.3",
+    "esbuild": "^0.23.0"
+  }
+}
