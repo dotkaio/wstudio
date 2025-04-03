@@ -356,8 +356,8 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
       nanoid:
-        specifier: ^5.0.1
-        version: 5.0.1
+        specifier: ^5.0.9
+        version: 5.0.9
       nanostores:
         specifier: ^0.9.3
         version: 0.9.3
@@ -998,8 +998,8 @@ importers:
         specifier: ^10.0.3
         version: 10.0.3
       nanoid:
-        specifier: ^5.0.1
-        version: 5.0.1
+        specifier: ^5.0.9
+        version: 5.0.9
       warn-once:
         specifier: ^0.1.1
         version: 0.1.1
@@ -1476,8 +1476,8 @@ importers:
         specifier: workspace:*
         version: link:../trpc-interface
       nanoid:
-        specifier: ^5.0.1
-        version: 5.0.1
+        specifier: ^5.0.9
+        version: 5.0.9
       type-fest:
         specifier: ^4.24.0
         version: 4.24.0
@@ -1710,8 +1710,8 @@ importers:
         specifier: ^7.2.0
         version: 7.2.0
       nanoid:
-        specifier: ^5.0.1
-        version: 5.0.1
+        specifier: ^5.0.9
+        version: 5.0.9
       umzug:
         specifier: ^3.2.1
         version: 3.2.1
@@ -1750,8 +1750,8 @@ importers:
         specifier: workspace:*
         version: link:../trpc-interface
       nanoid:
-        specifier: ^5.0.1
-        version: 5.0.1
+        specifier: ^5.0.9
+        version: 5.0.9
       slugify:
         specifier: ^1.6.6
         version: 1.6.6
@@ -1781,8 +1781,8 @@ importers:
         specifier: workspace:*
         version: link:../trpc-interface
       nanoid:
-        specifier: ^5.0.1
-        version: 5.0.1
+        specifier: ^5.0.9
+        version: 5.0.9
       zod:
         specifier: ^3.22.4
         version: 3.22.4
@@ -1827,8 +1827,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0
       nanoid:
-        specifier: ^5.0.1
-        version: 5.0.1
+        specifier: ^5.0.9
+        version: 5.0.9
       title-case:
         specifier: ^4.3.1
         version: 4.3.1
@@ -7650,8 +7650,8 @@ packages:
   lexical@0.16.0:
     resolution: {integrity: sha512-Skn45Qhriazq4fpAtwnAB11U//GKc4vjzx54xsV3TkDLDvWpbL4Z9TNRwRoN3g7w8AkWnqjeOSODKkrjgfRSrg==}
 
-  lib0@0.2.101:
-    resolution: {integrity: sha512-LljA6+Ehf0Z7YnxhgSAvspzWALjW4wlWdN/W4iGiqYc1KvXQgOVXWI0xwlwqozIL5WRdKeUW2gq0DLhFsY+Xlw==}
+  lib0@0.2.102:
+    resolution: {integrity: sha512-g70kydI0I1sZU0ChO8mBbhw0oUW/8U0GHzygpvEIx8k+jgOpqnTSb/E+70toYVqHxBhrERD21TwD5QcZJQ40ZQ==}
     engines: {node: '>=16'}
     hasBin: true
 
@@ -8196,13 +8196,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  nanoid@3.3.7:
-    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
-  nanoid@5.0.1:
-    resolution: {integrity: sha512-vWeVtV5Cw68aML/QaZvqN/3QQXc6fBfIieAlu05m7FZW2Dgb+3f0xc0TTxuJW+7u30t7iSDTV/j3kVI0oJqIfQ==}
+  nanoid@5.0.9:
+    resolution: {integrity: sha512-Aooyr6MXU6HpvvWXKoVoXwKMs/KyVakWwg7xQfv5/S/RIgJMy0Ifa45H9qqYy7pTCszrHzP21Uk4PZq2HpEM8Q==}
     engines: {node: ^18 || >=20}
     hasBin: true
 
@@ -15770,7 +15765,7 @@ snapshots:
   immerhin@0.9.0:
     dependencies:
       immer: 10.0.3
-      nanoid: 5.0.1
+      nanoid: 5.0.9
 
   import-fresh@3.3.0:
     dependencies:
@@ -16470,7 +16465,7 @@ snapshots:
 
   lexical@0.16.0: {}
 
-  lib0@0.2.101:
+  lib0@0.2.102:
     dependencies:
       isomorphic.js: 0.2.5
 
@@ -17355,9 +17350,7 @@ snapshots:
 
   nanoid@3.3.6: {}
 
-  nanoid@3.3.7: {}
-
-  nanoid@5.0.1: {}
+  nanoid@5.0.9: {}
 
   nanostores@0.9.3: {}
 
@@ -17763,19 +17756,19 @@ snapshots:
 
   postcss@8.4.27:
     dependencies:
-      nanoid: 3.3.7
+      nanoid: 3.3.11
       picocolors: 1.0.1
       source-map-js: 1.0.2
 
   postcss@8.4.39:
     dependencies:
-      nanoid: 3.3.7
+      nanoid: 3.3.11
       picocolors: 1.0.1
       source-map-js: 1.2.0
 
   postcss@8.4.41:
     dependencies:
-      nanoid: 3.3.7
+      nanoid: 3.3.11
       picocolors: 1.0.1
       source-map-js: 1.2.0
 
@@ -19278,7 +19271,7 @@ snapshots:
       date-fns: 3.6.0
       esbuild: 0.17.19
       miniflare: 3.20240701.0
-      nanoid: 3.3.7
+      nanoid: 3.3.11
       path-to-regexp: 6.2.1
       resolve: 1.22.8
       resolve.exports: 2.0.2
@@ -19355,7 +19348,7 @@ snapshots:
 
   yjs@13.5.52:
     dependencies:
-      lib0: 0.2.101
+      lib0: 0.2.102
 
   yocto-queue@0.1.0: {}
 
